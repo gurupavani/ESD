@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/s_product.css" />
+    <link rel="stylesheet" href="../styles/products.css" />
+  </head>
+
+  <body>
+    <div class="root">
+      <div class="main">
+        <!-- header start -->
+        <div class="main-header">
+          <!-- show left logo, right cart,profile -->
+          <!-- logo -->
+          <div class="main-top-header">
+            <div class="main-logo" onclick="getHomePage()">
+              <!-- <img
+                src="/assets/logos/main-logo-f.png"
+                alt="Deal"
+                class="main-logo-image"
+              /> -->
+              <span class="main-logo-title">Deal</span>
+            </div>
+            <div class="main-nav">
+              <!-- search bar for large screens -->
+              <div class="lg-search main-search">
+                <input placeholder="search" />
+              </div>
+              <!-- icons for navigation -->
+              <div class="main-menu">
+                <div class="main-menu-item" onclick="getCartPage()">
+                  <span class="material-icons"> shopping_cart </span>
+                </div>
+                <!-- main-menu-selected -->
+                <div class="main-menu-item" onclick="getProfilePage()">
+                  <span class="material-icons"> account_circle </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- category menu -->
+          <div class="category-lg-menu">
+            <div class="category-lg-menu-item">skincare</div>
+            <div class="category-lg-menu-item">women</div>
+            <div class="category-lg-menu-item">men</div>
+            <div class="category-lg-menu-item">furniture</div>
+            <div class="category-lg-menu-item">groceries</div>
+            <div class="category-lg-menu-item">shoes</div>
+            <div class="category-lg-menu-item">jewellery</div>
+          </div>
+          <!-- search bar for small screens -->
+
+          <div class="sm-search main-search">
+            <input placeholder="search" />
+          </div>
+        </div>
+        <!-- header end -->
+
+        <!-- main start -->
+        <!-- product details -->
+        <div class="main-body d-product-body container-md">
+          <div class="row">
+            <div class="col-md-5 col-sm-12">
+              <div class="d-product-img-cb-section">
+                <div class="d-product-img-section">
+                  <img
+                    src="https://i.dummyjson.com/data/products/15/thumbnail.jpg"
+                    alt=""
+                    class="d-product-img"
+                  />
+                </div>
+                <div class="d-product-cb-section">
+                  <button class="d-product-cb-btn" onclick="getCartPage()">
+                    <span class="material-icons"> shopping_cart </span>Add to
+                    Cart
+                  </button>
+                  <button class="d-product-cb-btn">
+                    <span class="material-icons"> shopping_bag </span>Buy Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7 col-sm-12">
+              <div class="d-product-info-section">
+                <div class="d-product-info-tpr">
+                  <div class="d-product-info-t">Eau De Perfume Spray</div>
+                  <div class="d-product-info-p">₹ 800</div>
+                  <div class="d-product-item-rating d-rating-avg">
+                    <span class="material-icons"> star </span
+                    ><span> 4.44 </span>
+                  </div>
+                </div>
+                <div class="d-product-info-details-section">
+                  <span class="d-product-info-head">product details</span>
+                  <div class="d-product-info-details">
+                    <!-- add all properties here -->
+                    <span
+                      >Genuine Al-Rehab spray perfume from UAE/Saudi
+                      Arabia/Yemen High Quality.Genuine Al-Rehab spray perfume
+                      from UAE/Saudi Arabia/Yemen High Quality.Genuine Al-Rehab
+                      spray perfume from UAE/Saudi Arabia/Yemen High Quality
+                    </span>
+                  </div>
+                </div>
+                <div class="d-product-info-delivery-section">
+                  <span class="d-product-info-head">delivery details</span>
+                  <div class="d-product-info-quantity">
+                    <span>Quantity : </span>
+                    <input type="number" value="1" />
+                  </div>
+                  <div class="d-product-info-delivery">
+                    Delivered by 12th NOV
+                  </div>
+                </div>
+                <div class="d-product-info-reviews-section">
+                  <span class="d-product-info-head">reviews and ratings</span>
+                  <div class="d-product-info-r-total">
+                    <span >Customer Rating : </span>
+                    <span class="material-icons"> star </span>
+                    <span class="material-icons"> star </span>
+                    <span class="material-icons"> star </span>
+                    <span class="material-icons"> star </span>
+                    <span class="material-icons-outlined"> star_half </span>
+                    <span>( 4.4 out of 5 )</span>
+                  </div>
+                  <div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- main end -->
+
+        <!-- footer start -->
+        <div class="main-footer">
+          <!-- name and other imortant links -->
+          <span>Important Links</span>
+          <div class="main-footer-links">
+            <span onclick="getHomePage()">Home</span>
+            <span onclick="getCartPage()">Cart</span>
+            <span onclick="getProfilePage()">Profile</span>
+          </div>
+        </div>
+        <!-- footer end -->
+      </div>
+    </div>
+
+    <!-- scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/events.js"></script>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+.d-product-body > div {
+  margin: 15px 0;
+}
+.d-product-img-cb-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.d-product-img-section {
+  padding: 5px;
+  width: 100%;
+  height: 350px;
+}
+.d-product-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+  object-fit: contain;
+}
+.d-product-cb-section {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.d-product-cb-btn {
+  width: 100%;
+  background-color: var(--main-active-light);
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: 0 2px 2px 0 var(--main-active-light);
+}
+.d-product-cb-btn:hover {
+  box-shadow: 3px 3px 5px var(--main-active-light);
+}
+.d-product-info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.d-product-info-section > div {
+  border: 1px solid #ccc;
+  box-shadow: 2px 3px 3px 2px #ccc;
+  border-radius: 7px;
+  padding: 5px;
+  width: 100%;
+}
+/* title section */
+.d-product-info-tpr {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.d-product-info-t {
+  font-size: large;
+  font-weight: bold;
+}
+.d-product-info-p {
+  font-size: medium;
+  font-weight: 600;
+}
+.d-product-info-details-section,
+.d-product-info-delivery {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.d-product-info-head {
+  text-transform: capitalize;
+  font-size: medium;
+  font-weight: bold;
+}
+.d-product-info-details,
+.d-product-info-delivery {
+  font-size: small;
+}
+.d-product-info-quantity {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.d-product-info-quantity > input {
+  outline: none;
+  border: 2px solid #999;
+  border-radius: 5px;
+  width: 40px;
+  font-size: small;
+}
+.d-product-info-r-total {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.d-product-info-r-total .material-icons,
+.d-product-info-r-total .material-icons-outlined {
+  font-size: medium;
+  color: var(--main-active-light);
+}
+.d-product-info-r-total :first-child{
+font-size: small;
+font-weight: bold;
+}
+.d-product-info-r-total :last-child{
+  font-size: small;
+  font-weight: bold;
+}

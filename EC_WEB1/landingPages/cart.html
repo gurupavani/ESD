@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/s_product.css" />
+    <link rel="stylesheet" href="../styles/cart.css" />
+  </head>
+  <body>
+    <div class="root">
+      <div class="main">
+        <!-- header start -->
+        <div class="main-header">
+          <!-- show left logo, right cart,profile -->
+          <!-- logo -->
+          <div class="main-top-header">
+            <div class="main-logo" onclick="getHomePage()">
+              <!-- <img
+                src="/assets/logos/main-logo-f.png"
+                alt="Deal"
+                class="main-logo-image"
+              /> -->
+              <span class="main-logo-title">Deal</span>
+            </div>
+            <div class="main-nav">
+              <!-- search bar for large screens -->
+              <div class="lg-search main-search">
+                <input placeholder="search" />
+              </div>
+              <!-- icons for navigation -->
+              <div class="main-menu">
+                <div class="main-menu-item" onclick="getCartPage()">
+                  <span class="material-icons"> shopping_cart </span>
+                </div>
+                <!-- main-menu-selected -->
+                <div class="main-menu-item" onclick="getProfilePage()">
+                  <span class="material-icons"> account_circle </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- category menu -->
+          <div class="category-lg-menu">
+            <div class="category-lg-menu-item">skincare</div>
+            <div class="category-lg-menu-item">women</div>
+            <div class="category-lg-menu-item">men</div>
+            <div class="category-lg-menu-item">furniture</div>
+            <div class="category-lg-menu-item">groceries</div>
+            <div class="category-lg-menu-item">shoes</div>
+            <div class="category-lg-menu-item">jewellery</div>
+          </div>
+          <!-- search bar for small screens -->
+
+          <div class="sm-search main-search">
+            <input placeholder="search" />
+          </div>
+        </div>
+        <!-- header end -->
+
+        <!-- main start -->
+        <div class="d-cart-body container-md">
+          <div class="row">
+            <!-- cart items -->
+
+            <div class="col-md-8 col-sm-12">
+              <div class="d-cart-list-section">
+                <div class="d-cart-heading">Shopping Cart</div>
+                <div class="d-cart-list">
+                  <!-- item -->
+                  <div class="d-cart-item">
+                    <div class="d-cart-item-img-container">
+                      <img
+                        src="https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+                        alt="image"
+                        class="d-cart-item-img"
+                      />
+                    </div>
+                    <div class="d-cart-item-details-container">
+                      <div class="d-cart-item-title" onclick="getProductPage()">
+                        RATAN Women’s Georgette Flared Freesize Sharara Palazzo
+                        Pant with Lining (Beige) -Free Size
+                      </div>
+                      <span class="d-cart-item-price">₹ 800</span>
+                      <div class="d-cart-item-qd">
+                        <span>Quantity : </span>
+                        <input type="number" class="d-cart-item-q" value="1" />
+                        <span class="material-icons"> delete </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- item -->
+                  <div class="d-cart-item">
+                    <div class="d-cart-item-img-container">
+                      <img
+                        src="https://i.dummyjson.com/data/products/7/thumbnail.jpg"
+                        alt="image"
+                        class="d-cart-item-img"
+                      />
+                    </div>
+                    <div class="d-cart-item-details-container">
+                      <div class="d-cart-item-title" onclick="getProductPage()">
+                        RATAN Women’s Georgette Flared Freesize Sharara Palazzo
+                        Pant with Lining (Beige) -Free Size
+                      </div>
+                      <span class="d-cart-item-price">₹ 800</span>
+                      <div class="d-cart-item-qd">
+                        <span>Quantity : </span>
+                        <input type="number" class="d-cart-item-q" value="1" />
+                        <span class="material-icons"> delete </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-cart-subtotal">
+                  <span>Total </span><span>(2 items) : </span>
+                  <span>₹ 2540.76</span>
+                </div>
+              </div>
+            </div>
+            <!-- checkout section -->
+            <div class="col-md-4 col-sm-12">
+              <div class="d-cart-checkout-section">
+                <div class="d-cart-heading">checkout</div>
+                <div class="d-cart-checkout-subtotal">
+                  <span>Total (2 items) : </span>
+                  <span>₹ 2540.76</span>
+                </div>
+                <button class="d-product-cb-btn">
+                  <span class="material-icons"> shopping_bag </span>buy now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- main end -->
+
+        <!-- footer start -->
+        <div class="main-footer">
+          <!-- name and other imortant links -->
+          <span>Important Links</span>
+          <div class="main-footer-links">
+            <span onclick="getHomePage()">Home</span>
+            <span onclick="getCartPage()">Cart</span>
+            <span onclick="getProfilePage()">Profile</span>
+          </div>
+        </div>
+        <!-- footer end -->
+      </div>
+    </div>
+
+    <!-- scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/events.js"></script>
+  </body>
+</html>
